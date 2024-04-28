@@ -17,7 +17,8 @@ import Foundation
                 carbs: carbs,
                 fat: Decimal(quantityFat),
                 protein: Decimal(quantityProtein),
-                note: "add with shortcuts",
+                // Auggie - shorten to make graph easier to read
+                note: "remote",
                 enteredBy: CarbsEntry.manual,
                 isFPU: (quantityFat > 0 || quantityProtein > 0) ? true : false,
                 fpuID: (quantityFat > 0 || quantityProtein > 0) ? UUID().uuidString : nil
